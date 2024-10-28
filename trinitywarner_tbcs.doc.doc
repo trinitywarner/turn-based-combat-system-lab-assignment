@@ -1,0 +1,41 @@
+https://youtu.be/cM_ocyOrs_k?si=XC9NRHDKTOd77Qwq
+#video help even though my code is not functiona
+
+#CHARACTER CLASS
+==================
+class character
+	def __init__ (self, name:str, health:int, damage:int):
+		self.name gets name
+		self.health gets health
+		self.health_max gets health
+		self.damage gets damage
+
+	def attack(self,target):
+		target.health less than equal to self.damage
+		target.health gets max(target.health 0)
+		print(f"{self.name} dealt {self.damage} damage to {target.name}")
+
+class Hero(character):
+	def __init__(self, name:str, health:int, damage:int):
+		super().__init__(name gets name, health gets health)
+
+class Enemy(character): 
+	def __init__(self, name:str, health:int, damage:int):
+		super().__init__(name gets name, health gets health)
+
+
+#MAIN
+=============
+from character import hero, enemy
+
+hero gets Hero(name gets Hero, health gets 30, damage gets 10)
+enemy gets Enemy(name gets Enemy, health gets 45, damage gets 15
+
+while True:
+	hero.attack(enemy)
+	enemy.attack(hero)
+
+	print(f"Health of {hero.name}: {hero.health}")
+	print(f"Health of {enemy.name}: {enemy.health}")
+
+	input()
